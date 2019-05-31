@@ -6,9 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
 @Entity
-@Table(name="v2_h2_fornecedor")
+@Table(name = "v2_h2_fornecedor")
 public class Fornecedor extends Contato {
+
 	@Temporal(TemporalType.DATE)
 	private Date ultimaVisita;
 
@@ -19,5 +21,5 @@ public class Fornecedor extends Contato {
 	public void setUltimaVisita(Date ultimaVisita) {
 		this.ultimaVisita = ultimaVisita;
 	}
-	
+
 }

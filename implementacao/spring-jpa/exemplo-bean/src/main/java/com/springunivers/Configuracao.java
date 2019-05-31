@@ -7,9 +7,10 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class Configuracao {
+	
 	@Bean
-	@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)	
-	public Mensagem  mensagem() {
+	@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+	public Mensagem mensagem() {
 		return new Mensagem();
 	}
 }

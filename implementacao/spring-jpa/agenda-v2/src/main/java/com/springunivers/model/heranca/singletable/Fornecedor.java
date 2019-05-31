@@ -6,10 +6,13 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+
 @Entity
-//DEIXA DE TER @Table
+// DEIXA DE TER @Table
 @DiscriminatorValue("F")
 public class Fornecedor extends Contato {
+	
 	@Temporal(TemporalType.DATE)
 	private Date ultimaVisita;
 
@@ -20,5 +23,5 @@ public class Fornecedor extends Contato {
 	public void setUltimaVisita(Date ultimaVisita) {
 		this.ultimaVisita = ultimaVisita;
 	}
-	
+
 }

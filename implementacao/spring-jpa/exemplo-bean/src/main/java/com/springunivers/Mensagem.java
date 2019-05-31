@@ -1,10 +1,13 @@
 package com.springunivers;
 
 public class Mensagem {
-	static int instancia=0;
+
+	static int instancia = 0;
+
 	public Mensagem() {
-		 instancia++;
+		instancia++;
 	}
+
 	public void enviar() {
 		System.out.println("OLA PESSOAL " + instancia);
 	}

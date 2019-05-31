@@ -8,18 +8,19 @@ import org.springframework.stereotype.Repository;
 
 import com.springunivers.model.Contato;
 
-
 @Repository
 public class ContatoDao {
+	
 	@PersistenceContext
 	private EntityManager em;
+
 	@Transactional
 	public void inserirContato(Contato contato) {
 		em.persist(contato);
 	}
+
 	public Contato buscarContato(Integer id) {
 		return em.find(Contato.class, id);
 	}
-	
-	
+
 }

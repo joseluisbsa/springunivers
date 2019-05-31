@@ -38,3 +38,10 @@ src-cordova/
 overrides/
 packages/
 diretorios.txt
+
+implementacao/spring-jpa/agenda-v1/bin/
+implementacao/spring-jpa/agenda-v2/bin/
+implementacao/spring-jpa/agenda-v3/.gitignore
+implementacao/spring-jpa/agenda-v4/bin/
+implementacao/spring-jpa/agenda-v5/bin/
+

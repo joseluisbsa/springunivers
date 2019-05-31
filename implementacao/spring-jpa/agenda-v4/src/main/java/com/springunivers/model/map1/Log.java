@@ -9,25 +9,29 @@ import javax.persistence.TemporalType;
 
 @Embeddable
 public class Log {
+	
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "dt_inclusao",nullable = false)
+	@Column(name = "dt_inclusao", nullable = false)
 	private Date dataInclusao;
+	
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "dt_alteracao")
 	private Date dataAlteracao;
+
 	public Date getDataInclusao() {
 		return dataInclusao;
 	}
+
 	public void setDataInclusao(Date dataInclusao) {
 		this.dataInclusao = dataInclusao;
 	}
+
 	public Date getDataAlteracao() {
 		return dataAlteracao;
 	}
+
 	public void setDataAlteracao(Date dataAlteracao) {
 		this.dataAlteracao = dataAlteracao;
 	}
-	
-	
-	
+
 }
